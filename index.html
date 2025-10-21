@@ -1,6 +1,6 @@
 <!--
   KeyShotXR optimizado para Cherry Coll Joyería
-  Animación Dije JCC-2 – Versión responsive
+  Animación Dije JCC-2 – Versión responsive (ajustada para GitHub Pages)
 -->
 
 <!DOCTYPE html>
@@ -52,13 +52,12 @@
         font-size: 1em;
         font-weight: 600;
         z-index: 20;
-        opacity: 1 !important;   /* siempre visible */
+        opacity: 1 !important;
         pointer-events: none;
-        transition: none !important; /* sin desvanecimiento */
-        white-space: nowrap;      /* evita que se rompa en varias líneas */
+        transition: none !important;
+        white-space: nowrap;
       }
 
-      /* Ajuste proporcional para pantallas grandes */
       @media (min-width: 1024px) {
         #overlayHint {
           font-size: 1.125em;
@@ -67,7 +66,6 @@
         }
       }
 
-      /* Ajuste para pantallas pequeñas (móvil) */
       @media (max-width: 767px) {
         #overlayHint {
           font-size: 0.875em;
@@ -85,7 +83,7 @@
 
       function initKeyShotXR() {
         var nameOfDiv = "KeyShotXR";
-        var folderName = "data"; // carpeta donde están tus imágenes JPG
+        var folderName = "animaciones-interactivas/data"; // 🔥 ruta ajustada para GitHub Pages
         var viewPortWidth = window.innerWidth;
         var viewPortHeight = window.innerHeight;
         var backgroundColor = "#ffffff";
@@ -145,7 +143,6 @@
 
       window.onload = function() {
         initKeyShotXR();
-        // Eliminamos cualquier ocultamiento del aviso
         const hint = document.getElementById("overlayHint");
         if (hint) hint.style.display = "block";
       };
